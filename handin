@@ -1,0 +1,22 @@
+- Motivation
+Making a good method for solving a puzzle with machine learning
+
+- Objection
+Making an agent to solve the 2048 game.
+
+- State of the art
+   + Re-enforcement learning through Deep Q learning 
+      MDPs1 https://www.youtube.com/watch?v=ip4iSMRW5X4
+      MDPs2 https://www.youtube.com/watch?v=1S-dw6Vt1l4
+      RL1 https://www.youtube.com/watch?v=w33Lplx49_A
+      RL2 https://www.youtube.com/watch?v=jUoZg513cdE
+   
+   + Re-enforcement learning through a simple Markovian process
+   
+- Proposal
+  + Implement a re-enforcement agent which uses deep q learning to learn the 2048 game
+  (+ Look at other kinds of neural networks and how they work)
+  
+- Experimentation
+
+- Conclusion

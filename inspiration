@@ -1,7 +1,14 @@
 André : I found this website that has a lot of interesting reading for us:
 
     http://satirist.org/learn-game/inspire/
-    
+
 Andreas : To understand deep Q learning and apply the latest research:
 
-    https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0#.d2coj7o34 
+    https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0#.d2coj7o34
+
+Guillermo : I found these videos useful when learning about basic reinforcement learning (general RL, not deepQlearning):
+
+MDPs1 https://www.youtube.com/watch?v=ip4iSMRW5X4
+MDPs2 https://www.youtube.com/watch?v=1S-dw6Vt1l4
+RL1 https://www.youtube.com/watch?v=w33Lplx49_A
+RL2 https://www.youtube.com/watch?v=jUoZg513cdE
