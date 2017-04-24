@@ -11,7 +11,8 @@ A learning algorithm for playing 2048
    1. [ ] Create the Deep Q-Agent
    2. [ ] Experiment with different architectures
    3. [ ] Evaluate score – Select most promising Architecture
-3. 04-28:
+3. 05-20:
    1. [ ] Write Report and Presentation
-   
+4. 05-24: Deadline
+
  
