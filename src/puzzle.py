@@ -28,7 +28,9 @@ KEY_RIGHT = "'d'"
 
 class GameGrid(Frame):
     score=0
+    increment=0
     def __init__(self):
+        self.increment=0
         self.score=0
         Frame.__init__(self)
 
@@ -89,6 +91,7 @@ class GameGrid(Frame):
             self.matrix,done,newscore = self.commands[key](self.matrix)
             self.score+=newscore
             print("+",newscore,"=",self.score)
+            self.increment=newscore
             if done:
                 self.matrix = add_two(self.matrix)
                 self.update_grid_cells()
