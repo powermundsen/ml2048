@@ -32,7 +32,7 @@ class GameGrid(Frame):
     def __init__(self):
         self.increment=0
         self.score=0
-        self.result=0
+        self.result=False
         Frame.__init__(self)
 
         self.grid()
@@ -52,7 +52,7 @@ class GameGrid(Frame):
         #self.init_grid()
         self.init_matrix()
         self.update_grid_cells()
-        self.result=0
+        self.result=False
         self.score=0
 
     def init_grid(self):
@@ -105,7 +105,7 @@ class GameGrid(Frame):
                 self.update_grid_cells()
                 done=False
                 if game_state(self.matrix)=='lose':
-                    self.result=1
+                    self.result=True
                     self.grid_cells[1][1].configure(text="You",bg=BACKGROUND_COLOR_CELL_EMPTY)
                     self.grid_cells[1][2].configure(text="Lose!",bg=BACKGROUND_COLOR_CELL_EMPTY)
                     self.restart()
