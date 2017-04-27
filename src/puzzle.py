@@ -97,9 +97,6 @@ class GameGrid(Frame):
                 self.matrix = add_two(self.matrix)
                 self.update_grid_cells()
                 done=False
-                if game_state(self.matrix)=='win':
-                    self.grid_cells[1][1].configure(text="You",bg=BACKGROUND_COLOR_CELL_EMPTY)
-                    self.grid_cells[1][2].configure(text="Win!",bg=BACKGROUND_COLOR_CELL_EMPTY)
                 if game_state(self.matrix)=='lose':
                     self.result=1
                     self.grid_cells[1][1].configure(text="You",bg=BACKGROUND_COLOR_CELL_EMPTY)
