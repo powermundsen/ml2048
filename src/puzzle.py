@@ -94,11 +94,11 @@ class GameGrid(Frame):
             key = event
         else:
             key = repr(event.char)
-            print(key)
+            #print(key)
         if key in self.commands:
             self.matrix,done,newscore = self.commands[key](self.matrix)
             self.score+=newscore
-            print("+",newscore,"=",self.score)
+            #print("+",newscore,"=",self.score)
             self.increment=newscore
             if done:
                 self.matrix = add_two(self.matrix)
