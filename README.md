@@ -6,9 +6,9 @@ A learning algorithm for playing 2048
 1. 04-10: 
    1. [X] Extract score from game
    2. [X] Extract states
-   3. [ ] Extract terminal states (win/**lose**)
-   4. [X] Create interface with game
-         1. [ ] Input structure
+   3. [X] Extract terminal states (win/**lose**)
+   4. [ ] Create interface with game
+         1. [X] Input structure
          2. [ ] Restart game
 2. 04-21:
    1. [ ] Create the Deep Q-Agent
