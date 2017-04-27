@@ -48,6 +48,13 @@ class GameGrid(Frame):
         self.init_matrix()
         self.update_grid_cells()
 
+    def restart(self):
+        #self.init_grid()
+        self.init_matrix()
+        self.update_grid_cells()
+        self.result=0
+        self.score=0
+
     def init_grid(self):
         background = Frame(self, bg=BACKGROUND_COLOR_GAME, width=SIZE, height=SIZE)
         background.grid()
@@ -101,6 +108,7 @@ class GameGrid(Frame):
                     self.result=1
                     self.grid_cells[1][1].configure(text="You",bg=BACKGROUND_COLOR_CELL_EMPTY)
                     self.grid_cells[1][2].configure(text="Lose!",bg=BACKGROUND_COLOR_CELL_EMPTY)
+                    self.restart()
 
 
     def generate_next(self):
