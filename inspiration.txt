@@ -5,6 +5,8 @@ André : I found this website that has a lot of interesting reading for us:
 Andreas : To understand deep Q learning and apply the latest research:
 
     https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0#.d2coj7o34
+    
+    http://neuro.cs.ut.ee/demystifying-deep-reinforcement-learning/
 
 Guillermo : I found these videos useful when learning about basic reinforcement learning (general RL, not deepQlearning):
 
