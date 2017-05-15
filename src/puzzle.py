@@ -52,6 +52,8 @@ class GameGrid(Frame):
         #self.init_grid()
         self.init_matrix()
         self.update_grid_cells()
+
+    def reset(self):
         self.result=False
         self.score=0
 
