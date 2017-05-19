@@ -3,7 +3,7 @@ from logic import *
 from random import *
 
 SIZE = 500
-GRID_LEN = 3
+GRID_LEN = 2
 GRID_PADDING = 10
 
 BACKGROUND_COLOR_GAME = "#92877d"
@@ -76,7 +76,7 @@ class GameGrid(Frame):
         return randint(0, GRID_LEN - 1)
 
     def init_matrix(self):
-        self.matrix = new_game(3)
+        self.matrix = new_game(2)
         self.matrix=add_two(self.matrix)
         self.matrix=add_two(self.matrix)
 
@@ -108,7 +108,7 @@ class GameGrid(Frame):
                 if game_state(self.matrix)=='lose':
                     self.result=True
                     self.grid_cells[1][1].configure(text="You",bg=BACKGROUND_COLOR_CELL_EMPTY)
-                    self.grid_cells[1][2].configure(text="Lose!",bg=BACKGROUND_COLOR_CELL_EMPTY)
+                    self.grid_cells[1][1].configure(text="Lose!",bg=BACKGROUND_COLOR_CELL_EMPTY)
                     self.restart()
 
 

@@ -11,7 +11,7 @@ from random import *
 #Task 1a#
 #######
 
-DIMENSION = 3
+DIMENSION = 2
 
 # [Marking Scheme]
 # Points to note:
@@ -126,11 +126,11 @@ def transpose(mat):
 # Check the down one. Reverse/transpose if ordered wrongly will give you wrong result.
 
 def cover_up(mat):
-    new=[[0,0,0],[0,0,0],[0,0,0]]
+    new=[[0,0],[0,0]]
     done=False
-    for i in range(3):
+    for i in range(2):
         count=0
-        for j in range(3):
+        for j in range(2):
             if mat[i][j]!=0:
                 new[i][count]=mat[i][j]
                 if j!=count:
@@ -141,8 +141,8 @@ def cover_up(mat):
 def merge(mat):
     done=False
     newscore=0
-    for i in range(3):
-         for j in range(2):
+    for i in range(2):
+         for j in range(1):
              if mat[i][j]==mat[i][j+1] and mat[i][j]!=0:
                  mat[i][j]*=2
                  mat[i][j+1]=0
