@@ -56,23 +56,23 @@ def add_two(mat):
 # 3 marks for correct checking
 
 def game_state(mat):
-    for i in range(len(mat)):
-        for j in range(len(mat[0])):
+    for i in range(DIMENSION):
+        for j in range(DIMENSION):
             if mat[i][j]==2048:
                 return 'win'
-    for i in range(len(mat)-1): #intentionally reduced to check the row on the right and below
-        for j in range(len(mat[0])-1): #more elegant to use exceptions but most likely this will be their solution
+    for i in range(DIMENSION-1): #intentionally reduced to check the row on the right and below
+        for j in range(DIMENSION-1): #more elegant to use exceptions but most likely this will be their solution
             if mat[i][j]==mat[i+1][j] or mat[i][j+1]==mat[i][j]:
                 return 'not over'
-    for i in range(len(mat)): #check for any zero entries
-        for j in range(len(mat[0])):
+    for i in range(DIMENSION): #check for any zero entries
+        for j in range(DIMENSION):
             if mat[i][j]==0:
                 return 'not over'
-    for k in range(len(mat)-1): #to check the left/right entries on the last row
-        if mat[len(mat)-1][k]==mat[len(mat)-1][k+1]:
+    for k in range(DIMENSION-1): #to check the left/right entries on the last row
+        if mat[DIMENSION-1][k]==mat[DIMENSION-1][k+1]:
             return 'not over'
-    for j in range(len(mat)-1): #check up/down entries on last column
-        if mat[j][len(mat)-1]==mat[j+1][len(mat)-1]:
+    for j in range(DIMENSION-1): #check up/down entries on last column
+        if mat[j][DIMENSION-1]==mat[j+1][DIMENSION-1]:
             return 'not over'
     return 'lose'
 
