@@ -11,6 +11,8 @@ from random import *
 #Task 1a#
 #######
 
+DIMENSION = 3
+
 # [Marking Scheme]
 # Points to note:
 # Matrix elements must be equal but not identical
@@ -33,11 +35,11 @@ def new_game(n):
 # 1 mark for creating the correct loop
 
 def add_two(mat):
-    a=randint(0,len(mat)-1)
-    b=randint(0,len(mat)-1)
+    a=randint(0,DIMENSION-1)
+    b=randint(0,DIMENSION-1)
     while(mat[a][b]!=0):
-        a=randint(0,len(mat)-1)
-        b=randint(0,len(mat)-1)
+        a=randint(0,DIMENSION-1)
+        b=randint(0,DIMENSION-1)
     mat[a][b]=2
     return mat
 
@@ -86,10 +88,10 @@ def game_state(mat):
 
 def reverse(mat):
     new=[]
-    for i in range(len(mat)):
+    for i in range(DIMENSION):
         new.append([])
-        for j in range(len(mat[0])):
-            new[i].append(mat[i][len(mat[0])-j-1])
+        for j in range(DIMENSION):
+            new[i].append(mat[i][DIMENSION-j-1])
     return new
 
 ###########
@@ -104,9 +106,9 @@ def reverse(mat):
 
 def transpose(mat):
     new=[]
-    for i in range(len(mat[0])):
+    for i in range(DIMENSION):
         new.append([])
-        for j in range(len(mat)):
+        for j in range(DIMENSION):
             new[i].append(mat[j][i])
     return new
 
@@ -124,11 +126,11 @@ def transpose(mat):
 # Check the down one. Reverse/transpose if ordered wrongly will give you wrong result.
 
 def cover_up(mat):
-    new=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+    new=[[0,0,0],[0,0,0],[0,0,0]]
     done=False
-    for i in range(4):
+    for i in range(3):
         count=0
-        for j in range(4):
+        for j in range(3):
             if mat[i][j]!=0:
                 new[i][count]=mat[i][j]
                 if j!=count:
@@ -139,8 +141,8 @@ def cover_up(mat):
 def merge(mat):
     done=False
     newscore=0
-    for i in range(4):
-         for j in range(3):
+    for i in range(3):
+         for j in range(2):
              if mat[i][j]==mat[i][j+1] and mat[i][j]!=0:
                  mat[i][j]*=2
                  mat[i][j+1]=0

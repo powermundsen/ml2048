@@ -3,7 +3,7 @@ from logic import *
 from random import *
 
 SIZE = 500
-GRID_LEN = 4
+GRID_LEN = 3
 GRID_PADDING = 10
 
 BACKGROUND_COLOR_GAME = "#92877d"
@@ -76,8 +76,7 @@ class GameGrid(Frame):
         return randint(0, GRID_LEN - 1)
 
     def init_matrix(self):
-        self.matrix = new_game(4)
-
+        self.matrix = new_game(3)
         self.matrix=add_two(self.matrix)
         self.matrix=add_two(self.matrix)
 
