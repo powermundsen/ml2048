@@ -6,3 +6,7 @@ src/__pycache__/
 *.csv
 
 *.swp
+
+*.h5
+
+src/\.DS_Store
