@@ -8,3 +8,5 @@ src/__pycache__/
 *.swp
 
 \.DS_Store
+
+*.h5
